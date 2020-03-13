@@ -5,9 +5,9 @@
  * @donate $9     https://businessbloomer.com/bloomer-armada/
  */
  
-add_filter( 'woocommerce_get_breadcrumb', 'bbloomer_single_product_edit_cat_breadcrumbs', 9999, 2 );
+add_filter( 'woocommerce_get_breadcrumb', 'kotsh_single_product_edit_cat_breadcrumbs', 9999, 2 );
  
-function bbloomer_single_product_edit_cat_breadcrumbs( $crumbs, $breadcrumb ) {
+function kotsh_single_product_edit_cat_breadcrumbs( $crumbs, $breadcrumb ) {
     
    if ( is_product() ) {
       $index = count( $crumbs ) - 2; // cat is always second last item
